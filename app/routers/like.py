@@ -7,7 +7,7 @@ from ..models import Like, Post
 from ..oauth2 import get_current_user
 from ..schemas import LikeResponse
 
-router = APIRouter(prefix="/like", tags=["like"])
+router = APIRouter(prefix="/like", tags=["Like"])
 
 
 @router.post("/", status_code=status.HTTP_201_CREATED)
