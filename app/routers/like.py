@@ -38,7 +38,6 @@ def like(
             )
 
         new_like = Like(post_id=like.post_id, user_id=current_user.id)
-        print(new_like)
         db.add(new_like)
         db.commit()
         return {"message": "successfully added like"}
