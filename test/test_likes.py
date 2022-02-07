@@ -1,4 +1,3 @@
-from re import I
 import pytest
 from app import models
 
