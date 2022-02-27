@@ -4,12 +4,6 @@ from app import schemas
 from app.config import settings
 
 
-def test_root(client):
-    response = client.get("/")
-    assert response.json().get("message") == "Hello World"
-    assert response.status_code == 200
-
-
 def test_creat_user(client, test_user):
     response = client.post(
         "/users/", json={"email": "joao5@email.com", "password": "pass123"})
