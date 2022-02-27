@@ -25,4 +25,4 @@ app.include_router(like.router)
 
 @app.get("/")
 async def main():
-    return {"message": "Hello World"}
+    return {"message": "Deployed from GitHub Actions"}
